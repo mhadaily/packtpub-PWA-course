@@ -1,6 +1,5 @@
 self.addEventListener('install', function (event) {
   console.log('[SW] Installing SW...', event);
-  // self.skipWaiting();
 });
 
 self.addEventListener('activate', function (event) {
