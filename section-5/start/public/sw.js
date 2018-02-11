@@ -84,7 +84,7 @@ self.addEventListener('fetch', function (event) {
     event.respondWith(caches.match(request));
   }
   // Runtime or Dynamic cache for google fonts
-  if (isGoogleFont(request)) {
+  if (isGoogleFont) {
     event.respondWith(
       caches.match(request)
       .then(function (res) {
