@@ -123,8 +123,6 @@ self.addEventListener('fetch', function (event) {
   }
 });
 
-
-db.replicate.to('http://example.com/mydb');
 self.addEventListener('sync', function (event) {
   console.log('[SW] Background syncing', event);
   // you can define as many tag as you want
